@@ -11,11 +11,20 @@ console.log("2. Trong JS, để kiểm tra một kiểu dữ liệu biến:")
 console.log("Dùng lệnh typeof để xem kiểu dữ liệu của biến")
 let age = '18';
 console.log('VD: let age = "18": ' + typeof(age));
-console.log("bài 2: ");
+console.log("Bài 2: ");
 console.log("1-b");
 console.log("2-a");
 console.log("3-e");
 console.log("4-c");
+console.log("Bài 3: ");
+console.log("a)");
+let message = ('Coding is great');
+console.log(message);
+console.log("b)");
+let studentCount = 0;
+console.log(studentCount);
+
+
 
 
 
