@@ -74,7 +74,16 @@ alert(`The square area is ${s}`);
 
 
 console.log("Bài 9: ");
+let r = prompt('Enter the radius of the circle');
+let s1 = 3.14*r*r;
+alert(`The circle area is ${s1}`);
 
+
+
+console.log("Bài 10: ");
+let C = prompt('Enter the temperature in Celsius');
+let F = (C*1.8)+32;
+alert(`${C} (C) = ${F} (F)`);
 
 
 
