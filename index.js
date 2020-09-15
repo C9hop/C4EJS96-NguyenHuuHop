@@ -67,8 +67,7 @@ alert(`Hi ${LastName} ${FirstName}`);
 
 console.log("Bài 8: ");
 let l = prompt('Enter side length of the square');
-let s;
-s = l*l;
+let s = l*l;
 alert(`The square area is ${s}`);
 
 
