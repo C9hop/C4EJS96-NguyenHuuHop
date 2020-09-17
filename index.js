@@ -9,7 +9,7 @@ console.log("let c9-hop")
 console.log("let null")
 console.log("2. Trong JS, để kiểm tra một kiểu dữ liệu biến:")
 console.log("Dùng lệnh typeof để xem kiểu dữ liệu của biến")
-let age = '18';
+let age = 18;
 console.log('VD: let age = "18": ' + typeof(age));
 
 
