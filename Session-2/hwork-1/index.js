@@ -1,0 +1,20 @@
+console.log('What are var and const in JavaScript?')
+console.log('Answer: ')
+console.log('Var declarations are globally scoped or function scoped while Const are block scopedar declarations are globally scoped or function scoped while const are block scopedar declarations are globally scoped or function scoped while let and const are block scoped')
+
+console.log('What are the differences between let and var?')
+console.log('Answer: ')
+console.log('Var: ')
+console.log('Var variables can be updated and re-declared within its scope')
+console.log('Let: ')
+console.log('Let variables can be updated but not re-declared')
+console.log('Ex:')
+console.log('let can be only available inside the scope it is declared, like in for loop, var can be accessed outside the loop')
+
+console.log('What are the differences between let and const?')
+console.log('Answer: ')
+console.log('Let:')
+console.log('Let variables can be updated but not re-declared')
+console.log('Const:')
+console.log('const variables can neither be updated nor re-declared.')
+
