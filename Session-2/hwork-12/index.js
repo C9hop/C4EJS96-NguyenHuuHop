@@ -19,11 +19,10 @@ if (x=8){
 }
 if (x=999){
     function circle() {
-      for (var i=1; i <= 999; i++) {
-      
-
-        
+      for (var i=1; i <= 366; i++) {
+      fd(1)
+      rt(1)
       }
     }
-    circlel()
+    circle()
   }
