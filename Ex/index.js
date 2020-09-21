@@ -1,5 +1,5 @@
-let menu = ['banh mi', 'com rang', 'coca cola', 'coffee'];
-console.log(menu);
+// let menu = ['banh mi', 'com rang', 'coca cola', 'coffee'];
+// console.log(menu);
 
 // // menu.push('fami');
 // // console.log(menu);
@@ -9,8 +9,8 @@ console.log(menu);
 // // // console.log(menu[2]);
 // console.log(menu);
 
-menu.splice(0,2);
-console.log(menu);
+// menu.splice(0,2);
+// console.log(menu);
 
 // for(let i = 0; i < menu.length; i++){
 //     console.log(menu[i]);
@@ -20,6 +20,8 @@ console.log(menu);
 // //     menu[i]=menu[i].toUpperCase();
 // // }
 // // console.log(menu);   
+
+
 
 
 
