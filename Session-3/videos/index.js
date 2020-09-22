@@ -1,6 +1,6 @@
 // ex: init
 
-let menuFilm = ['3 Chu Heo con','đố anh bắt được em','diệp vấn','ròm'];
+let menuFilm = ['Silicon valley','Harry potter','Batman','Endgame'];
 console.log(menuFilm);
 
 // ex: create
