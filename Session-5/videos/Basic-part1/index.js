@@ -39,7 +39,6 @@ if(items=allQuiz[0]){
                 alert('Good luck next time')        
         }
     }
-    allQuiz.splice(0,1);
 }
 else if(items=allQuiz[1]){
     if(x == null || x== undefined){
@@ -60,7 +59,6 @@ else if(items=allQuiz[1]){
                 alert('Good luck next time')        
         }
     }
-    allQuiz.splice(1,1);
 }
 else if(items=allQuiz[2]){
     if(x == null || x== undefined){
@@ -81,8 +79,10 @@ else if(items=allQuiz[2]){
                 alert('Good luck next time')        
         }
     }
-    allQuiz.splice(2,1);
 }
 }
 alert('we are out of question :(')
+//em kkhông tìm ra phương án để random k bị lặp lại câu hỏi trong array mà vẫn đảm bảo hiển thị hết các câu hỏi
+//thiếu 1.7, 1.8
+
 
