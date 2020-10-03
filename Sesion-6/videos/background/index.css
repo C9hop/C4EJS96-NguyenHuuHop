@@ -1,5 +1,16 @@
 div{
-    width: 500 135px;
-    background-image: url(http://newevolutiondesigns.com/images/freebies/nature-hd-background-22.jpg);
-    background-size: 75 75px;
+    height: 135px;
+    width: 500px;
+    background-image: url(https://i.pinimg.com/originals/74/65/f3/7465f30319191e2729668875e7a557f2.png);
+    background-size: 75px;
+    border: 3px solid black;
+}
+.div1{
+    background-repeat: repeat-x;
+}
+.div2{
+    background-repeat: repeat-y;
+}
+.div3{
+    background-repeat: no-repeat;
 }
