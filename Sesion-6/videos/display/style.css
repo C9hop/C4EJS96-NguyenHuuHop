@@ -1,0 +1,23 @@
+/* dislay 1: */
+/* span{
+    display: grid;
+    background: red;
+  }
+  div{
+    background: blue;
+  } */
+
+  /* display 2: */
+  /* div{
+    background: red;
+    display: inline;
+  } */
+
+  /* display 3:  */
+  /* #span1{
+    background: red;
+  }
+  #span2{
+    background:yellow;
+     max-width: 500px;
+  } */
