@@ -1,0 +1,32 @@
+/* boxModel1: */
+/* div{
+    background: wheat;
+    width:600px;
+    border: 2px solid green;
+    /* padding-left: 40px ;
+    padding-right: 40px ;
+    padding-top: 45px ;
+    padding-bottom: 45px ;
+  } */ 
+
+  /* boxModel2: */
+  /* #a >div {
+    background:wheat;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-bottom: 50px;
+    margin-top: 50px;
+  }
+  #a{
+    border:1px solid black
+  } */
+
+  /* boxModel3: */
+  div{
+    width : 200px;
+    height : 200px;
+    font-size:2em;
+    background:wheat;
+    padding-left: 200px;
+    box-sizing: border-box;
+  }
