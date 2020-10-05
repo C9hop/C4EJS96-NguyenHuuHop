@@ -402,3 +402,70 @@
 //     console.log('-------------------------------------')
 //     }
 // }
+
+// function hiNam() {
+//     alert('Hi Nam');
+//     alert('Nam, function is great')
+// }
+// hiNam();
+
+// function sayHi (name, comment){
+//     alert('hi ' +name)
+//     alert(`${name}, ${comment}`);
+// }
+
+// sayHi('Hop','you are so handsome')
+// let x = sayHi;
+// x('Hieu','you are so handsome')
+
+
+// function sayHi(name){
+//     alert('hi ' + name);
+// }
+// const sayGoodbye=(name) =>{
+//     alert('Goodbye ' + name);
+// }
+// function testSay(f){
+//     alert('here i say');
+//     f();
+// }
+// testSay(sayHi);
+// testSay(sayGoodbye);
+
+// setTimeOut
+// function run(){
+//     alert('hihi')
+// }
+// setTimeout(run, 3000);
+
+// DOM
+//read
+// document.addEventListener("DOMContentLoaded",function(){
+//     const x = document.getElementById('msg')
+//     console.log(x);
+// })  
+
+// update
+// document.addEventListener("DOMContentLoaded",function(){
+//     const x = document.getElementById('msg')
+//     x.textContent = 'Hi there'
+//     console.log(x)
+// })
+
+//event
+// document.addEventListener("DOMContentLoaded",function(){
+//     const x = document.getElementById('msg')r
+//     x.addEventListener(`click`, () =>{
+//         x.textContent = 'Hello bitch'})
+// })
+
+// create 
+
+document.addEventListener("DOMContentLoaded",function(){
+    const d = document.getElementById('msg')
+    d.insertAdjacentHTML('beforebegin', `<div>Cool</div>`)
+})
+
+
+
+
