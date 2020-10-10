@@ -461,10 +461,18 @@
 
 // create 
 
-document.addEventListener("DOMContentLoaded",function(){
-    const d = document.getElementById('msg')
-    d.insertAdjacentHTML('beforebegin', `<div>Cool</div>`)
-})
+// document.addEventListener("DOMContentLoaded",function(){
+//     const d = document.getElementById('msg')
+//     d.insertAdjacentHTML('beforebegin', `<div>Cool</div>`)
+// })
+
+async function load(){
+    const conn = await fetch('https://pokeapi.co/api/v2/pokemon/pikachu/?fbclid=IwAR3L2-s6EF5nVl1eP0s_WKZPgSe6ad3DejvrIv02rBxkiSfQjbY4x_Gqqco');
+    const data = await conn.json();;
+    console.log(data);
+}
+load();
+
 
 
 
