@@ -2,6 +2,7 @@ let admin ={
     email:`amin123@gmail.com`,
     password:`amin123`,
 }
+
 let user = [
     {
         name: `Nguyen Huu Hop`,
@@ -26,6 +27,7 @@ let user = [
         password: `khue123`,
     }
 ]
+
 let productsData = [
     {
         name:`La Nuit De L’homme EDT`,
@@ -33,6 +35,7 @@ let productsData = [
         price:`2.950.000đ`,
         imageUrl:`https://xxivstore.com/wp-content/uploads/2020/06/Untitled-1-2-768x768.png`,
         size:`100ml`,
+        sex:`male`,
         scent:[
             'lavender',
             'snowwood',
@@ -44,6 +47,7 @@ let productsData = [
         price:`3.400.000đ`,
         imageUrl:`https://xxivstore.com/wp-content/uploads/2020/06/libre.png`,
         size:`90ml`,
+        sex:`female`,
         scent:[
             'orange madarin',
             'lavender',
@@ -55,6 +59,7 @@ let productsData = [
         price:`3.150.000đ`,
         imageUrl:`https://xxivstore.com/wp-content/uploads/2020/05/9fe851cd-23f4-475f-9966-c931cb11e899-768x768.png`,
         size:`100ml`,
+        sex:`male`,
         scent:[
             'black pepper',
             'snowwood',
@@ -66,6 +71,7 @@ let productsData = [
         price:`3.850.000đ`,
         imageUrl:`https://xxivstore.com/wp-content/uploads/2020/06/3348901486392_672fa1db2d985714658c181fc5f0ac72-768x768.png`,
         size:`100ml`,
+        sex:`male`,
         scent:[
             'vanilla',
             'frankincense',
@@ -78,6 +84,7 @@ let productsData = [
         price:`4.250.000đ`,
         imageUrl:`https://xxivstore.com/wp-content/uploads/2020/06/coconoir-768x768.png`,
         size:`100ml`,
+        sex:`female`,
         scent:[
             'orange',
             'rose',
@@ -89,6 +96,7 @@ let productsData = [
         price:`3.400.000đ`,
         imageUrl:`https://xxivstore.com/wp-content/uploads/2020/06/chane-edt.png`,
         size:`100ml`,
+        sex:`female`,
         scent:[
             'pineapple',
             'jasmine',
@@ -100,6 +108,7 @@ let productsData = [
         price:`4.700.000đ`,
         imageUrl:`https://xxivstore.com/wp-content/uploads/2020/06/tom-ford-ombre-leather-orchard.vn_-768x768.png`,
         size:`100ml`,
+        sex:`male`,
         scent:[
             'leather',
             'cardamom',
@@ -111,10 +120,59 @@ let productsData = [
         price:`8.000.000đ`,
         imageUrl:`https://xxivstore.com/wp-content/uploads/2020/07/71lGQ7UBp7L._AC_SL1500_-768x768.png`,
         size:`100ml`,
+        sex: `unisex`,
         scent:[
             'saffron flowers',
             'rose',
             'oak tree',
+        ],
+    },{
+        name:`My Burberry Blush`,
+        brand:`Burberry`,
+        price:`3.750.000đ`,
+        imageUrl:`https://xxivstore.com/wp-content/uploads/2020/06/my-burberry-768x768.png`,
+        size:`100ml`,
+        sex: `female`,
+        scent:[
+            'yellow lemon',
+            'rose',
+            'purple flowers',
+        ],
+    },{
+        name:`Mr. Burberry EDP`,
+        brand:`Burberry`,
+        price:`3.000.000đ`,
+        imageUrl:`https://xxivstore.com/wp-content/uploads/2020/06/mr-burberry-edp-768x768.png`,
+        size:`100ml`,
+        sex: `male`,
+        scent:[
+            'cinnamon',
+            'snowwood',
+            'amber',
+        ],
+    },{
+        name:`Twilly d’Hermès`,
+        brand:`Hermès`,
+        price:`2.950.000đ`,
+        imageUrl:`https://xxivstore.com/wp-content/uploads/2020/08/hermes-twilly-d-hermes-hermes-twilly-d-hermes-eau-de-parfum-50-ml-3346133200014-copy.png`,
+        size:`85ml`,
+        sex: `female`,
+        scent:[
+            'ginger',
+            'jasmine',
+            'sandalwood',
+        ],
+    },{
+        name:`Un Jardin Sur Le Nil`,
+        brand:`Hermès`,
+        price:`2.800.000đ`,
+        imageUrl:`https://xxivstore.com/wp-content/uploads/2020/07/dfc17fa6322836978db254d13aa3e46a-768x768.png`,
+        size:`100ml`,
+        sex: `famale`,
+        scent:[
+            'pomelo',
+            'peony',
+            'musk',
         ],
     },
 ]
