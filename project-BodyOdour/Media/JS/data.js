@@ -102,20 +102,20 @@ let productsData = [
         imageUrl:``,
         size:`100ml`,
         scent:[
-            '',
-            '',
-            '',
+            'leather',
+            'cardamom',
+            'moss moss',
         ],
     }, {
-        name:``,
+        name:`Noir de Noir`,
         brand:`Tom Ford`,
-        price:`đ`,
+        price:`8.000.000đ`,
         imageUrl:``,
         size:`100ml`,
         scent:[
-            '',
-            '',
-            '',
+            'saffron flowers',
+            'rose',
+            'oak tree',
         ],
     },
 ]
