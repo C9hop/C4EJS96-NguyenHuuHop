@@ -10,15 +10,14 @@ let user = [
         phoneNumber: 033123456,
         email: `hop123@gmail.com`,
         password: `hop123`,
-    },
-    {
+    },{
         name: `Phung Duc Trung`,
         age: 20,
         address: `Ha Noi`,
         phoneNumber: 135791113,
         email: `trung123@gmail.com`,
         password: `trung123`,
-    },    {
+    },{
         name: `Do Minh Khue`,
         age: 20,
         address: `Ha Noi`,
