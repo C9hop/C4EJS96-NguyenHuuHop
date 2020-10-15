@@ -1,29 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=di, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        #sidebar{
-            color:red;;
-        }
-        .menu{
-            background-color: chartreuse;
-        }
-    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homework 9</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <div style="background-color: blueviolet;"> 
-        header 
-        <div class="menu">
-            <ul>
-                <li><a href="#">Trang chu</a></li>
-            </ul>
+    <h2>
+        9. App to view
+    </h2>
+    <div style="padding: 2em">
+        Here is a public API from Apple’s Itunes for affiliate developers to get the Itunes chart data: <a href="https://itunes.apple.com/us/rss/topsongs/all/limit=15/json" target="_blank">Itunes RSS API</a> . Implement an app to view the chart and play the audio preview. <a href="https://www.youtube.com/watch?v=z9-2WIkhOrk" target="_blank">Link demo</a>.
+
+    </div>
+    <div class="main">
+        <h1 id="main-title" class="main-title"></h1>
+        <div class="main-content">
+            <div class="show-songs">
+                <div class="show-type">
+                    Feed type <br>
+                    <select name="" id="showType" class="showMore"> 
+                        <option value="topsongs">Top songs</option>
+                        <option value="topalbums">Top album</option>
+                     
+                    </select>
+                </div>
+                <div class="show-more">
+                    Show Song <br>
+                    <select name="" id="showMore" class="showMore">
+                        <option value="10">10</option>
+                        <option value="20">20</option>
+                        <option value="30">30</option>
+                        <option value="40">40</option>
+                        <option value="50">50</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div id="main-content" class="main-content">
         </div>
     </div>
-    <div id="sidebar"> 
-        sidebar
-    </div>
+    
+    <script src="index.js"></script>
 </body>
+
 </html>
