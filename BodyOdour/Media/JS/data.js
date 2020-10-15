@@ -1,6 +1,7 @@
 let admin ={
     email:`amin123@gmail.com`,
     password:`amin123`,
+    permission:`admin`,
 }
 
 let user = [
@@ -11,6 +12,8 @@ let user = [
         phoneNumber: 033123456,
         email: `hop123@gmail.com`,
         password: `hop123`,
+        permission:`user`,
+
     },{
         name: `Phung Duc Trung`,
         age: 20,
@@ -18,6 +21,7 @@ let user = [
         phoneNumber: 135791113,
         email: `trung123@gmail.com`,
         password: `trung123`,
+        permission:`user`,
     },{
         name: `Do Minh Khue`,
         age: 20,
@@ -25,6 +29,7 @@ let user = [
         phoneNumber: 246810121,
         email: `khue123@gmail.com`,
         password: `khue123`,
+        permission:`user`,
     }
 ]
 
