@@ -173,7 +173,7 @@ let productsData = [
         price:`2.800.000đ`,
         imageUrl:`./Media/image/Un Jardin Sur Le Nil.png`,
         size:`100ml`,
-        sex: `famale`,
+        sex: `unisex`,
         scent:[
             'pomelo',
             'peony',
