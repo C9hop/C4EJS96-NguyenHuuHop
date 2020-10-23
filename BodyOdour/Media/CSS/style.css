@@ -5,9 +5,8 @@ section{
     text-align: center;
     padding-top: 50px;
     padding-bottom: 50px;
-    /* background-image: url("/BodyOdour/Media/css/.Media/image/bia.jpg"); */
-    background-color:#808080;
-    color:#ffffff;
+    /* background-color:#808080; */
+    color: black;
     line-height: 1.;
     font-size: 25px;
     font-family: "Josefin Sans",sans-serif;
@@ -39,4 +38,29 @@ section{
     position: absolute;
     top: 0;
 } */
+/* nav */
+nav{
+    position: absolute ;
+    margin: 50px 20px;
+    top: 0px;
+    right: 0px;
+}
+nav>ul>li {
+    text-align: center;
+    line-height: 40px;
+    margin-left: 70px;
+    float: left ;
+}
+nav>ul>li>a {
+    cursor: pointer;
+    /* text-decoration: none; */
+    /* display: block; */
+    /* outline: none; */
+    width: 100% ;
+    font-family: 'Open Sans', sans-serif ;
+    text-transform: uppercase;
+}
+nav>ul>li:hover>a {
+    color: #777;
+}
 

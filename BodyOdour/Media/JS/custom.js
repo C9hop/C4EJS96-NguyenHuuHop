@@ -30,6 +30,7 @@ signInBtn.addEventListener(`click`, signInOnClickCallback);
 function modalSignInOnclickCallback() {
     console.log(user)
     for (let i = 0; i < user.length; i++) {
+        console.log(user[i])
         if (user[i].email==modalNameInput.value && user[i].password==modalPasswordInput.value)
         { signIn(i);
               Content_Title_Bag.style.display = `block`;
