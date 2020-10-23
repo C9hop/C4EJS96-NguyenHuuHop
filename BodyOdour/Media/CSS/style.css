@@ -6,8 +6,8 @@ section{
     padding-top: 50px;
     padding-bottom: 50px;
     /* background-image: url("/BodyOdour/Media/css/.Media/image/bia.jpg"); */
-    background-color: black;
-    color: cornsilk;
+    background-color:#808080;
+    color:#ffffff;
     line-height: 1.;
     font-size: 25px;
     font-family: "Josefin Sans",sans-serif;
@@ -35,8 +35,8 @@ section{
 .main-pic{
     padding-right: 7rem  ;
 }
-.buy{
+/* .buy{
     position: absolute;
     top: 0;
-}
+} */
 
