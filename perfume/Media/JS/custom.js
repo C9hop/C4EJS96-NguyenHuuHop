@@ -212,79 +212,79 @@ function showSlides() {
   setTimeout(showSlides, 2000);
 }
 
-//male choice
-const MaleChoice = document.getElementById('male_choice');
-var maleproduct =  productsData.filter(function(male) {
-    return male.sex == `male`;
-});
+// //male choice
+// const MaleChoice = document.getElementById('male_choice');
+// var maleproduct =  productsData.filter(function(male) {
+//     return male.sex == `male`;
+// });
 
-console.log(maleproduct)
+// console.log(maleproduct)
 
-function update_maleproduct() {
+// function update_maleproduct() {
 
-  mainProd.innerHTML = '';
+//   mainProd.innerHTML = '';
 
-    for (let promale of maleproduct) {
-      mainProd.insertAdjacentHTML('beforeend', `<tr><div class="main-item"> <div class="main-pic">
-      <img class="img_pro" wirdth="170" height="170" src="${promale.imageUrl}" alt="${ promale.name}"/>
-  </div>
-  <div class="title">
-      <b>${ promale.brand}</b><br/>
-      <span>${ promale.price}</span>
+//     for (let promale of maleproduct) {
+//       mainProd.insertAdjacentHTML('beforeend', `<tr><div class="main-item"> <div class="main-pic">
+//       <img class="img_pro" wirdth="170" height="170" src="${promale.imageUrl}" alt="${ promale.name}"/>
+//   </div>
+//   <div class="title">
+//       <b>${ promale.brand}</b><br/>
+//       <span>${ promale.price}</span>
       
-  </div></td><button class="add_btns">Buy</button></td></div></tr>`);
-      };
-}
+//   </div></td><button class="add_btns">Buy</button></td></div></tr>`);
+//       };
+// }
 
-//female choice
+// //female choice
 
-const FemaleChoice = document.getElementById('male_choice');
-var femaleproduct =  productsData.filter(function(female) {
-    return female.sex == `female`;
-});
+// const FemaleChoice = document.getElementById('male_choice');
+// var femaleproduct =  productsData.filter(function(female) {
+//     return female.sex == `female`;
+// });
 
-// console.log(femaleproduct)
+// // console.log(femaleproduct)
 
-function update_femaleproduct() {
+// function update_femaleproduct() {
 
-  mainProd.innerHTML = '';
+//   mainProd.innerHTML = '';
 
-    for (let profemale of femaleproduct) {
-      mainProd.insertAdjacentHTML('beforeend', `<tr><div class="main-item"> <div class="main-pic">
-      <img class="img_pro" wirdth="170" height="170" src="${profemale.imageUrl}" alt="${ profemale.name}"/>
-  </div>
-  <div class="title">
-      <b>${ profemale.brand}</b><br/>
-      <span>${ profemale.price}</span>
+//     for (let profemale of femaleproduct) {
+//       mainProd.insertAdjacentHTML('beforeend', `<tr><div class="main-item"> <div class="main-pic">
+//       <img class="img_pro" wirdth="170" height="170" src="${profemale.imageUrl}" alt="${ profemale.name}"/>
+//   </div>
+//   <div class="title">
+//       <b>${ profemale.brand}</b><br/>
+//       <span>${ profemale.price}</span>
       
-  </div></td><button class="add_btns">Buy</button></td></div></tr>`);
-      };
-}
+//   </div></td><button class="add_btns">Buy</button></td></div></tr>`);
+//       };
+// }
 
-//unisex choice
+// //unisex choice
 
-var unisexproduct =  productsData.filter(function(unisex) {
-    return unisex.sex == `unisex`;
-});
+// var unisexproduct =  productsData.filter(function(unisex) {
+//     return unisex.sex == `unisex`;
+// });
 
-// console.log(femaleproduct)
+// // console.log(femaleproduct)
 
-function update_unisexproduct() {
+// function update_unisexproduct() {
 
-  mainProd.innerHTML = '';
+//   mainProd.innerHTML = '';
 
-    for (let prounisex of unisexproduct) {
-      mainProd.insertAdjacentHTML('beforeend', `<tr><div class="main-item"> <div class="main-pic">
-      <img class="img_pro" wirdth="170" height="170" src="${prounisex.imageUrl}" alt="${prounisex.name}"/>
-  </div>
-  <div class="title">
-      <b>${ prounisex.brand}</b><br/>
-      <span>${ prounisex.price}</span>
+//     for (let prounisex of unisexproduct) {
+//       mainProd.insertAdjacentHTML('beforeend', `<tr><div class="main-item"> <div class="main-pic">
+//       <img class="img_pro" wirdth="170" height="170" src="${prounisex.imageUrl}" alt="${prounisex.name}"/>
+//   </div>
+//   <div class="title">
+//       <b>${ prounisex.brand}</b><br/>
+//       <span>${ prounisex.price}</span>
       
-  </div></td><button class="add_btns">Buy</button></td></div></tr>`);
-      };
-}
-
+//   </div></td><button class="add_btns">Buy</button></td></div></tr>`);
+//       };
+// }
+          
 
 
 
