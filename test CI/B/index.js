@@ -14,9 +14,8 @@ function clickButtonCallBack() {
         // alert('Con số may mắn là: ' + random);
         result.textContent = 'Con số may mắn lần này là: ' + random;
     }
-  setTimeout(showSlides, 4000);
+  setTimeout(function(){ result.textContent = 'Hết thời gian dự đoán!!!';}, 4000);
   
 }
-result.textContent = 'Hết thời gian dự đoán!!!';
 click.addEventListener(`click`, clickButtonCallBack);
 
