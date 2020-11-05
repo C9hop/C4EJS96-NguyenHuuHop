@@ -1,5 +1,5 @@
 //log-in
-let modalSignUpBtn = document.getElementById(`modal_sign_up_btn`);
+let modalSignUpBtn = document.getElementById(`modal_sign_up_btn1`);
 let modalSignInBtn = document.getElementById(`modal_sign_in_btn`);
 let signOutBtn = document.getElementById(`sign_out_btn`);
 let modalPasswordInput = document.getElementById(`sign_in_password_input`);
@@ -17,6 +17,7 @@ let modalSignIn = document.getElementById(`id02`);
 let sideName = document.getElementById(`side_user_name`);
 let bagRedDot = document.getElementById(`bag_red_dot`);
 let Content_Title_Bag = document.getElementById(`content_title_bag`);
+let see_more = document.getElementById(`see_more`);
 bagRedDot.style.display = `none`;
 Content_Title_Bag.style.display = `none`;
 
@@ -54,16 +55,35 @@ modalSignInBtn.addEventListener(`click`, modalSignInOnclickCallback);
 
 function signIn(index) {
     signInBtn.style.display = `none`;
+  signUpBtn.style.display = `none`;
     signOutBtn.style.display = `block`;
     sideName.textContent = user[index].name;
     sideName.style.display = `block`;     
 
 }
+
+
+// ----------------logn-up-------------------------
+function modalSignUpOnclickCallback(e){
+  e.preventDefault()
+  modalSignUp.style.display = `none`;
+  signInBtn.style.display = `none`;
+  signUpBtn.style.display = `none`;
+  signOutBtn.style.display = `block`;
+  sideName.textContent = nameInput.value; 
+  sideName.style.display = `block`   
+}
+modalSignUpBtn.addEventListener(`click`,modalSignUpOnclickCallback)
+
+
+
 // Nút đăng xuất
-function signOut() {
+function signOut(e) {
+  e.preventDefault()
     signInBtn.style.display = `block`;
+    signUpBtn.style.display = `block`;
     signOutBtn.style.display = `none`;
-    sideName.textContent = ``;
+    sideName.style.display = `none`;
   Content_Title_Bag.style.display = `none`
 }
 signOutBtn.addEventListener(`click`, signOut);
@@ -77,18 +97,40 @@ function update_table() {
    mainProd.innerHTML = ''; 
   // table_body.innerHTML = '';
 
-  for (let data of productsData) {
+  for (let i=0; i< productsData.length-4; i++) {
     mainProd.insertAdjacentHTML('beforeend', `<tr><div class="main-item"> <div class="main-pic">
-          <img class="img_pro" wirdth="170" height="170" src="${data.imageUrl}" alt="${data.name}"/>
+          <img class="img_pro" wirdth="170" height="170" src="${productsData[i].imageUrl}" alt="${productsData[i].name}"/>
       </div>
       <div class="title">
-          <b>${data.brand}</b><br/>
-          <span>${data.price} vnđ</span>
+          <b>${productsData[i].brand}</b><br/>
+          <span>${productsData[i].price} vnđ</span>
           
-      </div></td><button class="add_btns">Buy</button><button class="view_btns" onclick="document.getElementById('view').style.display='block'">View</button></td></div></tr>`);
+      </div></td><div class="perfume_btns"><button class="add_btns" style="backgroud-color: red;">Buy</button><button class="view_btns" onclick="document.getElementById('view').style.display='block'">View</button></div></td></div></tr>`);
     };
 }
 update_table();
+
+//-----------see_more----------------------
+
+function seemore() {
+
+  // mainProd.innerHTML = ''; 
+//  table_body.innerHTML = '';
+
+ for (let i=8; i< productsData.length; i++) {
+   mainProd.insertAdjacentHTML('beforeend', `<tr><div class="main-item"> <div class="main-pic">
+         <img class="img_pro" wirdth="170" height="170" src="${productsData[i].imageUrl}" alt="${productsData[i].name}"/>
+     </div>
+     <div class="title">
+         <b>${productsData[i].brand}</b><br/>
+         <span>${productsData[i].price} vnđ</span>
+         
+     </div></td><div class="perfume_btns"><button class="add_btns" style="backgroud-color: red;">Buy</button><button class="view_btns" onclick="document.getElementById('view').style.display='block'">View</button></div></td></div></tr>`);
+   };
+   see_more.style.display = `none`
+}
+see_more.addEventListener(`click`,seemore)
+
 
 // //DOM add-delete
 
@@ -173,17 +215,18 @@ for (let i=0; i<click_view.length; i++) {
 
   //  for (let i=0; i<productsData.length; i++) {
      view.insertAdjacentHTML('beforeend', `<div class="info_text"> <div class="info_img">
-           <img class="img_pro" wirdth="170" height="170" src="${productsData[i].imageUrl}" alt="${productsData[i].name}"/>
+           <img class="img_pro_view" wirdth="170" height="170" src="${productsData[i].imageUrl}" alt="${productsData[i].name}"/>
        </div>
-       <div class="title">
-           <b style="color: red;">${productsData[i].name}</b>
-           <b> Brand:</b> <div>${productsData[i].brand}</div>
-           <b> Size:</b> <div>${productsData[i].size}</div>
-           <b> Sex:</b> <div>${productsData[i].sex}</div>
-           <b> Scent:</b> <div>${productsData[i].scent}</div>
-           <span> Price: ${productsData[i].price} vnđ</span>
+       <div class="title_view">
+           <div><b style="color: red;">${productsData[i].name}</b></div>
+           <div><b> Brand:</b> <span>${productsData[i].brand}</span></div>
+           <div><b> Size:</b> <span>${productsData[i].size}</span></div>
+           <div> <b> Sex:</b> <span>${productsData[i].sex}</span></div>
+           <div><b> Scent:</b> <span>${productsData[i].scent}</span></div>
+           <div><span><b> Price</b>: ${productsData[i].price} vnđ</span></div>
+           <button class="close_btns" onclick="document.getElementById('view').style.display='none'">Close</button>
            
-       </div><button class="close_btns" onclick="document.getElementById('view').style.display='none'">Close</button>`);
+        </div>`);
     //  };
   // }
   // view_perfume();
@@ -284,7 +327,7 @@ function showSlides() {
 //   </div></td><button class="add_btns">Buy</button></td></div></tr>`);
 //       };
 // }
-          
+
 
 
 
@@ -308,6 +351,6 @@ function ShowModal(){
 
 // When the user clicks anywhere outside of the modal, close it
 // window.onclick = function() {
-//   var MyModal = document.getElementById('myModal')
-//   MyModal.style.display = "none";
+//   var view1 = document.getElementById('view')
+//   view1.style.display = "none";
 //   }

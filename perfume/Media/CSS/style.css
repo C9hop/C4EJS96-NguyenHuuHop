@@ -3,14 +3,15 @@ section{
 }
 .banner{
     text-align: center;
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-top: 100px;
+    padding-bottom: 100px;
     /* background-color:#808080; */
     color: black;
     line-height: 1.;
     font-size: 25px;
     font-family: "Josefin Sans",sans-serif;
     font-weight: 500;
+    height: 500px;
 }
 #content{
   background-color: #d3d3d3;
@@ -21,7 +22,7 @@ section{
 .main-content{
     display:flex;
     flex-wrap: wrap;
-    width:1100px;
+    widows: 100%;;
     margin:0 auto;
     font-family: "Josefin Sans",sans-serif;
 
@@ -31,10 +32,10 @@ section{
     padding:10px 0;
 }
 
-.title{
-    margin-left: 50px;
+.title
+{
     width:170px;
-    display: block;
+    display:inline-block;
 }
 .main-pic{
     padding-right: 7rem  ;
@@ -72,6 +73,9 @@ nav>ul>li>a {
 }
 nav>ul>li:hover>a {
     color:pink;
+}
+ul{
+  list-style-type: none;
 }
 
 
@@ -331,7 +335,7 @@ hr {
 }
 #sign_up_btn{
   border-radius: 1rem; 
-  width: 10%;
+  width:auto;
 }
 
 
@@ -355,16 +359,17 @@ hr {
 #sign_in_btn{
   width: 10%;
     border-radius: 1rem;
-    width: auto  
+    width: auto;   
 }
 
 #trademark{
   /* display:flex; */
   flex-wrap: wrap;
-  width:1100px;
+  widows: 100px;;
   margin:0 auto;
   font-family: "Josefin Sans",sans-serif;
   text-align: center;
+  background-color: #d3d3d3;
 
 /* background-color: #d3d3d3; */
 }
@@ -376,7 +381,7 @@ hr {
 
 .rowtext-center {
   display: grid;
-  grid-template-columns: repeat(3, 33%)
+  grid-template-columns: repeat(4, 25%)
 }
 
 #banner_odour{
@@ -445,6 +450,7 @@ body {
 img {
   /* padding-left: 30%; */
   vertical-align: middle;
+  /* margin-left: -1%; */
 }
 
 .container-fluid{
@@ -887,7 +893,9 @@ margin-left: 38%;
   background-color: #fefefe;
   margin: 5% auto 15% auto;
   border: 1px solid #888;
-  width: 80%; 
+  width: fit-content; 
+  padding: 15px;
+  border-radius: 1rem;
 }
 /* The Close Button (x) */
 .close {
@@ -903,4 +911,48 @@ margin-left: 38%;
 .close:focus {
   color: red;
   cursor: pointer;
+}
+
+
+/* -------------------------------view-------------------------------------------- */
+.img_pro_view{
+  padding: 0%;
+}
+
+.info_img{
+  display: flex;
+  flex:1;
+  justify-content: center;
+}
+
+.title_view{
+  flex:1;
+}
+
+.info_text {
+  display: flex;
+}
+.perfume_btns{
+  background-color:whitesmoke;
+  border-radius: 1rem;
+  width: auto;
+  margin-left: 30px;
+  /* margin-right: 80px; */
+  padding: 10px 10px;
+  display: flex;
+}
+.about_values{
+  display: flex ;
+}
+.our_values{
+  padding: 10px;
+  margin-top: -32px;
+}
+.close_btns{
+  border-radius: 1rem;
+  width: 80px;
+}
+#see_more{
+  cursor: pointer;
+  font-style: italic;
 }
