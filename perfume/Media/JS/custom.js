@@ -71,7 +71,8 @@ function modalSignUpOnclickCallback(e){
   signUpBtn.style.display = `none`;
   signOutBtn.style.display = `block`;
   sideName.textContent = nameInput.value; 
-  sideName.style.display = `block`   
+  sideName.style.display = `block`
+  Content_Title_Bag.style.display = `block`;   
 }
 modalSignUpBtn.addEventListener(`click`,modalSignUpOnclickCallback)
 
@@ -97,12 +98,12 @@ function update_table() {
    mainProd.innerHTML = ''; 
   // table_body.innerHTML = '';
 
-  for (let i=0; i< productsData.length-4; i++) {
+  for (let i=0; i< productsData.length-8; i++) {
     mainProd.insertAdjacentHTML('beforeend', `<tr><div class="main-item"> <div class="main-pic">
           <img class="img_pro" wirdth="170" height="170" src="${productsData[i].imageUrl}" alt="${productsData[i].name}"/>
       </div>
       <div class="title">
-          <b>${productsData[i].brand}</b><br/>
+          <b>${productsData[i].name}</b><br/>
           <span>${productsData[i].price} vnđ</span>
           
       </div></td><div class="perfume_btns"><button class="add_btns" style="backgroud-color: red;">Buy</button><button class="view_btns" onclick="document.getElementById('view').style.display='block'">View</button></div></td></div></tr>`);
@@ -117,12 +118,12 @@ function seemore() {
   // mainProd.innerHTML = ''; 
 //  table_body.innerHTML = '';
 
- for (let i=8; i< productsData.length; i++) {
+ for (let i=12; i< productsData.length; i++) {
    mainProd.insertAdjacentHTML('beforeend', `<tr><div class="main-item"> <div class="main-pic">
          <img class="img_pro" wirdth="170" height="170" src="${productsData[i].imageUrl}" alt="${productsData[i].name}"/>
      </div>
      <div class="title">
-         <b>${productsData[i].brand}</b><br/>
+         <b>${productsData[i].name}</b><br/>
          <span>${productsData[i].price} vnđ</span>
          
      </div></td><div class="perfume_btns"><button class="add_btns" style="backgroud-color: red;">Buy</button><button class="view_btns" onclick="document.getElementById('view').style.display='block'">View</button></div></td></div></tr>`);
@@ -141,6 +142,7 @@ const tableChoice = document.getElementById('table_choice');
 const number_product = document.getElementsByClassName('number_ipt');
 const ContainerCartItems = document.getElementById('container_cart_items');
 const product_choice=[ ];
+// add_btns.style.display=`none`;
 
 // function update_table() {
 
@@ -153,6 +155,7 @@ const product_choice=[ ];
 // update_table();
 
 // button Add table choice
+
   for (let i = 0; i < add_btns.length; i++) {
         add_btns[i].addEventListener('click', () => {
            let choice ={name:productsData[i].name, brand:productsData[i].brand, price:productsData[i].price, size:productsData[i].size,sex:productsData[i].sex,scent:productsData[i].scent}
@@ -250,7 +253,7 @@ function showSlides() {
   for (i = 0; i < dots.length; i++) {
     dots[i].className = dots[i].className.replace(" active", "");
   }
-  slides[slideIndex - 1].style.display = "block";
+  slides[slideIndex - 1].style.display = `block`;
   dots[slideIndex - 1].className += " active";
   setTimeout(showSlides, 2000);
 }
