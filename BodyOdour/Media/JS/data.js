@@ -30,6 +30,14 @@ let user = [
         email: `khue123@gmail.com`,
         password: `khue123`,
         permission:`user`,
+    },{
+        name: `Bui Tien Duy`,
+        age: 19,
+        address: `Ha Noi`,
+        phoneNumber: 0333615354,
+        email: `btienduy@gmail.com`,
+        password: `duy123`,
+        permission:`user`,
     }
 ]
 
